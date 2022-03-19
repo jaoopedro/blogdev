@@ -1,0 +1,76 @@
+/*Cor do site*/
+body{
+	background-color: rgb(188, 245, 245);
+}
+
+header#cabeca{
+	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
+}
+
+/*Editando a semantica */
+
+
+section#corpo{
+	display: block; /*O documento so pode flutuar se for definido como um bloco*/
+	width: 500px;
+	float: left; /*Foi definido para flutuar para o lado esquerto*/
+	/*border-right:1px solid;*/
+	padding-right: 15px;
+}
+
+
+aside#lateral{
+	display: block; 
+	width: 350px;
+	float: right; /*Foi definido para flutuar para o lado direito*/
+}
+
+
+footer#rodape{
+	clear: both; /*Para poder limpar as configurações*/
+	border-top: 1px solid ;
+}
+
+footer#rodape p{
+	text-align: center;
+}
+
+
+/*Formatação menu principal*/
+
+nav#menu{
+	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
+}
+
+nav#menu ul{
+	list-style: none; /*Sumir marcadores*/
+	text-transform: uppercase;/*Deixar as letras maiusculas*/
+	position: absolute;
+	top: -10px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
+	left: 300px;
+	
+}
+
+nav#menu li{
+	display: inline-block;
+	background-color: #0ea4df;
+	padding: 10px; /*Serve para criar um espaço dentro do objeto*/
+	margin: 2px; /*Serve para criar um espaço fora do objeto*/
+	transition: background-color 1s; /*Tempo de transição*/
+}
+
+nav#menu a{
+	text-decoration: none; /*Retirar o sublinhado do link*/
+	color: black;
+}
+
+/*Usamos o :hover para efeitos de transição*/
+nav#menu li:hover{ 
+	background-color: blueviolet; /*Cor da tansição*/
+}
+
+nav#menu a:hover{
+	color: aliceblue;
+}
+
+
