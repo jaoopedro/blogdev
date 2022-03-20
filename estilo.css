@@ -1,9 +1,10 @@
 /*Cor do site*/
 body{
-	background-color: rgb(188, 245, 245);
+	background-color: rgb(241, 241, 241);
 }
 
 header#cabeca{
+	background-color: white;
 	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
 }
 
@@ -12,16 +13,16 @@ header#cabeca{
 
 section#corpo{
 	display: block; /*O documento so pode flutuar se for definido como um bloco*/
-	width: 500px;
+	width: 780px; 
 	float: left; /*Foi definido para flutuar para o lado esquerto*/
-	/*border-right:1px solid;*/
+	border-right:1px solid;
 	padding-right: 15px;
 }
 
 
 aside#lateral{
 	display: block; 
-	width: 350px;
+	width: 480px;
 	float: right; /*Foi definido para flutuar para o lado direito*/
 }
 
@@ -46,8 +47,8 @@ nav#menu ul{
 	list-style: none; /*Sumir marcadores*/
 	text-transform: uppercase;/*Deixar as letras maiusculas*/
 	position: absolute;
-	top: -10px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
-	left: 300px;
+	top: 0px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
+	left: 350px;
 	
 }
 
@@ -72,5 +73,3 @@ nav#menu li:hover{
 nav#menu a:hover{
 	color: aliceblue;
 }
-
-
