@@ -1,6 +1,6 @@
 /*Cor do site*/
 body{
-	background-image: url('imagens/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg');
+	background-image: url("imagens/RLQNm.jpg");
 }
 
 header#cabeca{
@@ -20,7 +20,8 @@ section#corpo{
 	float: left; /*Foi definido para flutuar para o lado esquerto*/
 	border-right:1px solid;
 	padding-right: 15px;
-	color: aliceblue;
+	color: rgb(255, 255, 255);
+	
 }
 
 
@@ -28,14 +29,17 @@ aside#lateral{
 	display: block; 
 	width: 480px;
 	float: right; /*Foi definido para flutuar para o lado direito*/
-	color: aliceblue;
+	color: rgb(255, 255, 255);
 }
 
+
+
+/*CRIAÇÃO DO RODAPE*/
 
 footer#rodape{
 	clear: both; /*Para poder limpar as configurações*/
 	border-top: 1px solid ;
-	color: aliceblue;
+	color: white;
 }
 
 footer#rodape p{
@@ -86,7 +90,7 @@ nav#menu a:hover{
 }
 
 nav#menu h1{
-	color: #00008B;
+	color: #0ea4df;
 	transition: color 1s;
 }
 nav#menu h1:hover{
