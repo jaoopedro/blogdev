@@ -1,10 +1,13 @@
 /*Cor do site*/
 body{
-	background-color: rgb(241, 241, 241);
+	background-image: url('imagens/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg');
 }
 
 header#cabeca{
-	background-color: white;
+	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
+	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+
 	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
 }
 
@@ -13,10 +16,11 @@ header#cabeca{
 
 section#corpo{
 	display: block; /*O documento so pode flutuar se for definido como um bloco*/
-	width: 780px; 
+	width: 600px; 
 	float: left; /*Foi definido para flutuar para o lado esquerto*/
 	border-right:1px solid;
 	padding-right: 15px;
+	color: aliceblue;
 }
 
 
@@ -24,12 +28,14 @@ aside#lateral{
 	display: block; 
 	width: 480px;
 	float: right; /*Foi definido para flutuar para o lado direito*/
+	color: aliceblue;
 }
 
 
 footer#rodape{
 	clear: both; /*Para poder limpar as configurações*/
 	border-top: 1px solid ;
+	color: aliceblue;
 }
 
 footer#rodape p{
@@ -41,13 +47,14 @@ footer#rodape p{
 
 nav#menu{
 	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
+	
 }
 
 nav#menu ul{
 	list-style: none; /*Sumir marcadores*/
 	text-transform: uppercase;/*Deixar as letras maiusculas*/
 	position: absolute;
-	top: 0px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
+	top: -7px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
 	left: 350px;
 	
 }
@@ -55,7 +62,7 @@ nav#menu ul{
 nav#menu li{
 	display: inline-block;
 	background-color: #0ea4df;
-	padding: 10px; /*Serve para criar um espaço dentro do objeto*/
+	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
 	margin: 2px; /*Serve para criar um espaço fora do objeto*/
 	transition: background-color 1s; /*Tempo de transição*/
 }
@@ -67,9 +74,21 @@ nav#menu a{
 
 /*Usamos o :hover para efeitos de transição*/
 nav#menu li:hover{ 
-	background-color: blueviolet; /*Cor da tansição*/
+	/*background-color: blueviolet;*/ /*Cor da tansição*/
+
+	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
+	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
 }
 
 nav#menu a:hover{
 	color: aliceblue;
+}
+
+nav#menu h1{
+	color: #00008B;
+	transition: color 1s;
+}
+nav#menu h1:hover{
+	color: blueviolet;
 }
