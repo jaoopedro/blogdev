@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Quicksand:wght@300&display=swap');
 
 /*Cor do site*/
 body{
 	background-color: #483D8B;
+    
 }
 
 header#cabeca{
@@ -15,57 +15,6 @@ header#cabeca{
 
 	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
 }
-
-/*Editando a semantica */
-
-
-section#corpo{
-	display: block; /*O documento so pode flutuar se for definido como um bloco*/
-	width: 600px; 
-	float: left; /*Foi definido para flutuar para o lado esquerto*/
-	border-right:1px solid;
-	padding-right: 15px;
-	color: rgb(255, 255, 255);
-	
-}
-section#corpo {
-	font-family: 'Palette Mosaic', cursive; /*Fonte para os titulos*/
-	font-family: 'Quicksand', sans-serif;
-}
-
-aside#lateral{
-	display: block; 
-	width: 480px;
-	float: right; /*Foi definido para flutuar para o lado direito*/
-	color: rgb(255, 255, 255);
-}
-
-
-section#corpo a{
-	color: #ffff;
-}
-
-
-
-
-
-/*CRIAÇÃO DO RODAPE*/
-
-footer#rodape{
-	clear: both; /*Para poder limpar as configurações*/
-	border-top: 1px solid ;
-	color: white;
-}
-
-footer#rodape p{
-	text-align: center;
-	font-family: 'Indie Flower', cursive;
-}
-
-
-
-
-
 
 /*Formatação menu principal*/
 nav#menu h1{
@@ -118,4 +67,9 @@ nav#menu h1{
 }
 nav#menu h1:hover{
 	color: rgb(0, 0, 0);
+}
+
+#formulario{
+
+    color: #ffffff;
 }
