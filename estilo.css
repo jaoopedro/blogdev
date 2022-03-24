@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Quicksand:wght@300&display=swap');
 
 
 /*Cor do site*/
@@ -27,7 +27,10 @@ section#corpo{
 	color: rgb(255, 255, 255);
 	
 }
-
+section#corpo h1{
+	font-family: 'Palette Mosaic', cursive; /*Fonte para os titulos*/
+	font-family: 'Quicksand', sans-serif;
+}
 
 aside#lateral{
 	display: block; 
@@ -48,6 +51,7 @@ footer#rodape{
 
 footer#rodape p{
 	text-align: center;
+	font-family: 'Indie Flower', cursive;
 }
 
 
