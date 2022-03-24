@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Quicksand:wght@300&display=swap');
 
-
 /*Cor do site*/
 body{
-	background-image: url("imagens/RLQNm.jpg");
+	background-color: #483D8B;
 }
 
 header#cabeca{
 	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
 	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
 	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+
+	box-shadow: 2px 2px 15px #141525;/*EFEITO DE SOMBRA*/
 
 	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
 }
@@ -27,7 +28,7 @@ section#corpo{
 	color: rgb(255, 255, 255);
 	
 }
-section#corpo h1{
+section#corpo {
 	font-family: 'Palette Mosaic', cursive; /*Fonte para os titulos*/
 	font-family: 'Quicksand', sans-serif;
 }
@@ -38,6 +39,13 @@ aside#lateral{
 	float: right; /*Foi definido para flutuar para o lado direito*/
 	color: rgb(255, 255, 255);
 }
+
+
+section#corpo a{
+	color: #ffff;
+}
+
+
 
 
 
@@ -53,6 +61,17 @@ footer#rodape p{
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Formatação menu principal*/
@@ -73,6 +92,7 @@ nav#menu ul{
 	
 }
 
+
 nav#menu li{
 	display: inline-block;
 	background-color: #0ea4df;
@@ -88,11 +108,11 @@ nav#menu a{
 
 /*Usamos o :hover para efeitos de transição*/
 nav#menu li:hover{ 
-	/*background-color: blueviolet;*/ /*Cor da tansição*/
-
+	
 	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
 	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
 	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+	box-shadow: 2px 2px 15px #141525;/*SOMBRA NA TRANSIÇÃO*/
 }
 
 nav#menu a:hover{
