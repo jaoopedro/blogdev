@@ -22,6 +22,7 @@ nav#menu h1{
 }
 nav#menu{
 	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
+	margin-bottom: 2%; /*Deixar o Botão do menu redondo*/
 	
 }
 
@@ -37,7 +38,8 @@ nav#menu ul{
 
 nav#menu li{
 	display: inline-block;
-	background-color: #0ea4df;
+	background-color: #5c0df0;
+	border-radius: 10px;
 	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
 	margin: 2px; /*Serve para criar um espaço fora do objeto*/
 	transition: background-color 0.5s; /*Tempo de transição*/
@@ -50,11 +52,7 @@ nav#menu a{
 
 /*Usamos o :hover para efeitos de transição*/
 nav#menu li:hover{ 
-	
-	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
-	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
-	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
-	box-shadow: 2px 2px 15px #141525;/*SOMBRA NA TRANSIÇÃO*/
+	background-color:#483D8B ;
 }
 
 nav#menu a:hover{
@@ -62,12 +60,17 @@ nav#menu a:hover{
 }
 
 nav#menu h1{
-	color: #0ea4df;
+	color:  rgb(0, 0, 0);
 	transition: color 1s;
 }
 nav#menu h1:hover{
-	color: rgb(0, 0, 0);
+	color: #423d8b ;
 }
+
+#Ponto{
+	padding: 15px 0px 0px 12px;
+}
+
 
 #formulario{
 
