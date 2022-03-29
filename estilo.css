@@ -136,3 +136,15 @@ nav#menu h1:hover{
 #Ponto{
 	padding: 15px 0px 0px 12px;
 }
+
+
+#link-topo{
+	text-decoration: none;
+	color: gray;
+	padding: 6px;
+	background-color: black;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	box-shadow: 3px 3px 10px black;
+}
