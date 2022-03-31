@@ -83,10 +83,11 @@ footer#rodape a{
 /*Formatação menu principal*/
 nav#menu h1{
 	font-family: 'Indie Flower', cursive;
+	text-shadow: 1px 1px 3px black;
 }
 nav#menu{
 	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
-	margin-bottom: 2%; /*Deixar o Botão do menu redondo*/
+
 	
 }
 
@@ -103,7 +104,7 @@ nav#menu ul{
 nav#menu li{
 	display: inline-block;
 	background-color: #5c0df0;
-	border-radius: 10px;
+	border-radius: 10px;/*Para deixar o botao do menu redondo*/
 	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
 	margin: 2px; /*Serve para criar um espaço fora do objeto*/
 	transition: background-color 0.5s; /*Tempo de transição*/
