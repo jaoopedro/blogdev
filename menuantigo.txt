@@ -1,0 +1,69 @@
+header#cabeca{
+	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
+	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
+	margin-left:137px;
+	margin-right:137px;
+	margin-bottom: 20px;
+	margin-top: -10px;
+	box-shadow: 2px 2px 15px #141525;/*EFEITO DE SOMBRA*/
+
+	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
+}
+
+
+/*Formatação menu principal*/
+nav#menu h1{
+	font-family: 'Indie Flower', cursive;
+	text-shadow: 1px 1px 3px black;
+}
+nav#menu{
+	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
+
+	
+}
+
+nav#menu ul{
+	list-style: none; /*Sumir marcadores*/
+	text-transform: uppercase;/*Deixar as letras maiusculas*/
+	position: absolute;
+	top: -7px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
+	left: 350px;
+	
+}
+
+
+nav#menu li{
+	display: inline-block;
+	background-color: #5c0df0;
+	border-radius: 10px;/*Para deixar o botao do menu redondo*/
+	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
+	margin: 2px; /*Serve para criar um espaço fora do objeto*/
+	transition: background-color 0.5s; /*Tempo de transição*/
+}
+
+nav#menu a{
+	text-decoration: none; /*Retirar o sublinhado do link*/
+	color: black;
+}
+
+/*Usamos o :hover para efeitos de transição*/
+nav#menu li:hover{ 
+	background-color:#483D8B ;
+}
+
+nav#menu a:hover{
+	color: aliceblue;
+}
+
+nav#menu h1{
+	color:  rgb(0, 0, 0);
+	transition: color 1s;
+}
+nav#menu h1:hover{
+	color: #423d8b ;
+}
+
+#Ponto{
+	padding: 15px 0px 0px 12px;
+}

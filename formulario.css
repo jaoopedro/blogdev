@@ -2,7 +2,7 @@
 
 /*Cor do site*/
 body{
-	background-color: #483D8B;
+	background-color: #D3D3D3;
     
 }
 
@@ -17,62 +17,116 @@ header#cabeca{
 }
 
 /*Formatação menu principal*/
-nav#menu h1{
-	font-family: 'Indie Flower', cursive;
-}
-nav#menu{
-	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
-	margin-bottom: 2%; /*Deixar o Botão do menu redondo*/
-	
+#nav
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-nav#menu ul{
-	list-style: none; /*Sumir marcadores*/
-	text-transform: uppercase;/*Deixar as letras maiusculas*/
-	position: absolute;
-	top: -7px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
-	left: 350px;
-	
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-
-nav#menu li{
-	display: inline-block;
-	background-color: #5c0df0;
-	border-radius: 10px;
-	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
-	margin: 2px; /*Serve para criar um espaço fora do objeto*/
-	transition: background-color 0.5s; /*Tempo de transição*/
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
-nav#menu a{
-	text-decoration: none; /*Retirar o sublinhado do link*/
-	color: black;
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
 }
 
-/*Usamos o :hover para efeitos de transição*/
-nav#menu li:hover{ 
-	background-color:#483D8B ;
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+  box-shadow: 0px 0px 10px black;
+
 }
 
-nav#menu a:hover{
-	color: aliceblue;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
 }
 
-nav#menu h1{
-	color:  rgb(0, 0, 0);
-	transition: color 1s;
-}
-nav#menu h1:hover{
-	color: #423d8b ;
+#menu a {
+  display: block;
+  padding: 0.5rem;
 }
 
-#Ponto{
-	padding: 15px 0px 0px 12px;
+#btn-mobile {
+  display: none;
 }
 
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
 
 #formulario{
 
-    color: #ffffff;
+    color: #4F4F4F;
 }

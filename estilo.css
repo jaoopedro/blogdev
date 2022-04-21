@@ -3,30 +3,21 @@
 
 /*Cor do site*/
 body{
-	/*background-color: #857dbb;*/
-	background-image: url("imagens/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg");
+	background-color: #D3D3D3;
+	/*background-image: url("imagens/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg");*/
 }
+
+
 div#interfaca{
 	width: 950px ;
 	position: relative;
-	background-color: #483D8B;
-	margin: 2px auto 0px auto;
+	background-color: #696969;
+	margin: 10px auto 0px auto;
 	box-shadow: 0px 0px 10px black;
 	padding: 10px;
 }
 
-header#cabeca{
-	background: rgba(255, 255, 255, 0.1);/*Efeito de vidro embaçado*/
-	backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
-	-webkit-backdrop-filter: blur(10px);/*Efeito de vidro embaçado*/
-	margin-left:137px;
-	margin-right:137px;
-	margin-bottom: 20px;
-	margin-top: -10px;
-	box-shadow: 2px 2px 15px #141525;/*EFEITO DE SOMBRA*/
 
-	border-bottom: 1px solid; /*Definido a linha na parte de baixo do header separando o menu dos outros conteúdos*/
-}
 
 /*Editando a semantica */
 
@@ -77,64 +68,124 @@ footer#rodape a{
 	color: white;
 }
 
-
-
-
-/*Formatação menu principal*/
-nav#menu h1{
-	font-family: 'Indie Flower', cursive;
-	text-shadow: 1px 1px 3px black;
-}
-nav#menu{
-	display: block; /*Flutuar poder ser manipulado (um bloco pode flutuar pela tela)*/
-
-	
-}
-
-nav#menu ul{
-	list-style: none; /*Sumir marcadores*/
-	text-transform: uppercase;/*Deixar as letras maiusculas*/
-	position: absolute;
-	top: -7px ;  /*Essa margem de -20px é para o menu ficar bem la em cima*/
-	left: 350px;
-	
-}
-
-
-nav#menu li{
-	display: inline-block;
-	background-color: #5c0df0;
-	border-radius: 10px;/*Para deixar o botao do menu redondo*/
-	padding: 7px; /*Serve para criar um espaço dentro do objeto*/
-	margin: 2px; /*Serve para criar um espaço fora do objeto*/
-	transition: background-color 0.5s; /*Tempo de transição*/
-}
-
-nav#menu a{
-	text-decoration: none; /*Retirar o sublinhado do link*/
+div#objetivo{
+	background-color: #D3D3D3;
 	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius: 3%;
+	padding: 2px;
 }
 
-/*Usamos o :hover para efeitos de transição*/
-nav#menu li:hover{ 
-	background-color:#483D8B ;
+/*MENU*/
+#nav
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-nav#menu a:hover{
-	color: aliceblue;
+a {
+  color: black;
+  text-decoration: none;
+  font-family: sans-serif;
 }
 
-nav#menu h1{
-	color:  rgb(0, 0, 0);
-	transition: color 1s;
-}
-nav#menu h1:hover{
-	color: #423d8b ;
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
-#Ponto{
-	padding: 15px 0px 0px 12px;
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
 }
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+  box-shadow: 0px 0px 10px black;
+
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
 
 
 #link-topo{
