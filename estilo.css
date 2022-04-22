@@ -4,11 +4,11 @@
 /*Cor do site*/
 body{
 	background-color: #D3D3D3;
-	/*background-image: url("imagens/GettyImages-1086740226-5c2d625a4cedfd00016ed36c.jpg");*/
+	
 }
 
 
-div#interfaca{
+div#interface{
 	width: 950px ;
 	position: relative;
 	background-color: #696969;
@@ -185,8 +185,6 @@ a:hover {
     top: -7px;
   }
 }
-
-
 
 #link-topo{
 	text-decoration: none;
