@@ -126,6 +126,8 @@ a:hover {
   display: none;
 }
 
+
+/* RESPONSIVIDADE DO MENU*/
 @media (max-width: 600px) {
   #menu {
     display: block;
@@ -186,6 +188,7 @@ a:hover {
   }
 }
 
+/*FORMATAÇÃO DO BOTAO TOPO*/
 #link-topo{
 	text-decoration: none;
 	color: gray;
